@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="max-w-90 lg:max-w-300 m-auto flex sticky mt-3 justify-between items-center  rounded-[50px] py-2 px-10 lg:text-[13px]">
+
+<body class="font-sans">
+    <header class="relative w-90 m-auto lg:m-auto lg:w-300 ">
+
+        <div class="fixed top-5 w-90 lg:w-300 z-10 bg-white rounded-[50px] py-2 px-15 flex justify-between items-center lg:text-[13px]">
         <img src="./img/logo.svg" alt="">
         <nav class="hidden lg:flex gap-10">
             <a href="#">Чему вы научитесь</a>
@@ -17,11 +20,35 @@
             <a href="#">Контакты</a>
         </nav>
         <button class="bg-[#38BFF2] rounded-[50px] py-1 px-5 lg:hidden text-white">Войти</button>
-        <div class="hidden lg:flex gap-3">
+        <div class="hidden lg:flex items-baseline gap-3">
             <a href="#">Регистрация</a>
-            <button class="bg-[#38BFF2] rounded-[50px] py-1 px-5 to-white">Войти</button>
+            <button class="bg-[#38BFF2] rounded-[50px] py-1 px-5 text-white">Войти</button>
         </div>
         <i class="fa-solid fa-bars lg:hidden!" style="color: rgb(255, 0, 0);"></i>
+        </div>
     </header>
+    <main>
+        <section class="bg-[#EBF2F5] w-full relative py-20">
+            <div class="lg:max-w-300 m-auto pt-10 lg:pt-50  flex flex-col gap-15 items-center  lg:flex-row lg:justify-between">
+                <div class="flex flex-col items-center lg:items-start  gap-4">
+                    <h1 class="text-[24px] text-center lg:text-start w-65 lg:text-[46px]  font-medium lg:w-155  ">Школа <span class="text-red-600">{</span>программирования<span class="text-red-500">}</span>для тех, кому нужны реальные навыки,
+                    а не просто сертификат</h1>
+                    <img src="./img/line.svg" alt="" class="lg:w-100 w-20 ">
+                    <p class="w-80 lg:w-90">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
+                    <button class="bg-[#F15525] py-4 px-10 w-90 text-[18px] lg:px-10 lg:py-3 rounded-[50px] text-white lg:text-[20px] lg:w-75">Пройти тестирование</button>
+                
+                </div>
+                <div>
+                    <img src="./img/herosection.svg" alt="" width="300px">
+                </div>
+                
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
 </body>
 </html>
