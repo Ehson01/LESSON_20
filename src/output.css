@@ -20,6 +20,7 @@
     --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-6xl: 72rem;
+    --container-7xl: 80rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-normal: 400;
@@ -432,6 +433,9 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -452,6 +456,9 @@
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+  .w-35 {
+    width: calc(var(--spacing) * 35);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -497,6 +504,9 @@
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+  .w-85 {
+    width: calc(var(--spacing) * 85);
   }
   .w-90 {
     width: calc(var(--spacing) * 90);
@@ -686,6 +696,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -936,8 +949,17 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
   .text-\[13px\] {
     font-size: 13px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .text-\[17px\] {
     font-size: 17px;
@@ -956,6 +978,9 @@
   }
   .text-\[56px\] {
     font-size: 56px;
+  }
+  .text-\[77px\] {
+    font-size: 77px;
   }
   .leading-0 {
     --tw-leading: 0px;
@@ -984,6 +1009,15 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#38BFF2\] {
+    color: #38BFF2;
+  }
+  .text-\[1\] {
+    color: 1;
+  }
+  .text-\[15\] {
+    color: 15;
   }
   .text-\[20\] {
     color: 20;
@@ -1140,11 +1174,20 @@
     .lg\:w-1020 {
       width: calc(var(--spacing) * 1020);
     }
+    .lg\:max-w-3 {
+      max-width: calc(var(--spacing) * 3);
+    }
     .lg\:max-w-4 {
       max-width: calc(var(--spacing) * 4);
     }
     .lg\:max-w-4xl {
       max-width: var(--container-4xl);
+    }
+    .lg\:max-w-7 {
+      max-width: calc(var(--spacing) * 7);
+    }
+    .lg\:max-w-7xl {
+      max-width: var(--container-7xl);
     }
     .lg\:max-w-100 {
       max-width: calc(var(--spacing) * 100);
@@ -1160,6 +1203,18 @@
     }
     .lg\:max-w-300 {
       max-width: calc(var(--spacing) * 300);
+    }
+    .lg\:max-w-320 {
+      max-width: calc(var(--spacing) * 320);
+    }
+    .lg\:max-w-340 {
+      max-width: calc(var(--spacing) * 340);
+    }
+    .lg\:max-w-343 {
+      max-width: calc(var(--spacing) * 343);
+    }
+    .lg\:max-w-350 {
+      max-width: calc(var(--spacing) * 350);
     }
     .lg\:max-w-xl {
       max-width: var(--container-xl);
@@ -1255,6 +1310,9 @@
     }
     .lg\:text-white {
       color: var(--color-white);
+    }
+    .lg\:text-shadow-2xs {
+      text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.15));
     }
   }
 }
@@ -1391,6 +1449,15 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-text-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1425,6 +1492,8 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-text-shadow-color: initial;
+      --tw-text-shadow-alpha: 100%;
     }
   }
 }
