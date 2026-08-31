@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header class="max-w-90 lg:max-w-300 m-auto flex sticky mt-3 justify-between items-center  rounded-[50px] py-2 px-10 lg:text-[13px]">
+        <img src="./img/logo.svg" alt="">
+        <nav class="hidden lg:flex gap-10">
+            <a href="#">Чему вы научитесь</a>
+            <a href="#">Процесс обучения</a>
+            <a href="#">Стоимость</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <button class="bg-[#38BFF2] rounded-[50px] py-1 px-5 lg:hidden text-white">Войти</button>
+        <div class="hidden lg:flex gap-3">
+            <a href="#">Регистрация</a>
+            <button class="bg-[#38BFF2] rounded-[50px] py-1 px-5 to-white">Войти</button>
+        </div>
+        <i class="fa-solid fa-bars lg:hidden!" style="color: rgb(255, 0, 0);"></i>
+    </header>
 </body>
 </html>
